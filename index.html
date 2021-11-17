@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="resume.css">
+    <title>Mia's CV</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="pdf.js"></script>
+
+</head>
+
+<body>
+
+    <div id="main" class="container">
+        <section id="header">
+            <div>
+                <div>
+                    <img src="mia.png">
+                </div>
+            </div>
+
+            <div>
+                <div class="myName">Mia Mudzingwa</div>
+                <div class="myTitle">Software Engineer</div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="sectionTitle">
+                    Personal details
+                </div>
+            </div>
+
+            <div>
+                <div class="personal-info">
+                    <div id="age">
+                        <b>Age:</b> 20
+
+                    </div>
+
+                    <div id="nationality">
+                        <b>Nationality:</b> Zimbabwean
+                    </div>
+
+                    <div id="status">
+                        <b>Marital status:</b> single
+                    </div>
+
+                    <div class="links">
+
+                        <div class="link-item">
+                            <b>&#x2709;</b> <a href="mailto:miamudzingwa@gmail.com">miamudzingwa@gmail.com</a>
+                        </div>
+
+                        <div class="link-item">
+                            <b>&#x2121;</b> <a href="tel:+263779768301"> +263779768301</a>
+                        </div>
+
+                        <div class="link-item">
+                            <b>&#x2121;</b> <a href="tel:+263737146695"> +263737146695</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="sectionTitle">
+                    About me
+                </div>
+            </div>
+
+            <div>
+                <div class="Info">
+                    <p>
+                        I am a hardworking girl, determined to accomplish any given task to the best of my ability.
+                        I always keep an open mind when dealing with any issue, because I believe there isn't only
+                        one way of doing things. My strengths are in creativity, design and problem solving. Teamwork is
+                        very important to me because I enjoy learning from others as I understand that I do not have the
+                        answers to everything. I also adapt easily to change.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="sectionTitle">
+                    Education
+                </div>
+            </div>
+
+            <div>
+                <div class="education">
+                    <div class="education-info">
+                        <p>
+                            January 2014 - November 2017 <br>
+                            Ordinary Level <br>
+                            Tynwald High School <br>
+                        </p>
+                    </div>
+
+                    <div class="education-info">
+                        <p>
+                            January 2018 - November 2019 <br>
+                            Advanced Level <br>
+                            Tynwald High School <br>
+                        </p>
+                    </div>
+
+                    <div class="education-info">
+                        <p>
+                            DELF DALF A1 and DELF DALF A2 French diplomas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="sectionTitle">
+                    Skills
+                </div>
+
+            </div>
+
+            <div>
+                <div class="skill">
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="sectionTitle">
+                    Languages
+                </div>
+            </div>
+
+            <div>
+                <div class="language">
+                    <p>
+                        French
+                        <div class="lang french">50%</div> <br>
+
+                        English
+                        <div class="lang english">85%</div> <br>
+
+                        Shona
+                        <div class="lang shona">65%</div> <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="sectionTitle">
+                    Interests
+                </div>
+
+            </div>
+
+            <div>
+                <div class="interest">
+                    <section class="hobbie">
+                        <div>&#127911;</div>
+                        <div>&#127912;</div>
+                        <div>&#128131;</div>
+
+                        <div class="fun">music</div>
+                        <div class="fun">art</div>
+                        <div class="fun">dancing</div>
+
+                        <div>&#128250;</div>
+                        <div>&#127934;</div>
+                        <div>&#127954;</div>
+
+                        <div class="fun">watching TV</div>
+                        <div class="fun">tennis</div>
+                        <div class="fun">hockey</div>
+                    </section>
+                </div>
+                <p>
+
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="sectionTitle">
+                    References
+                </div>
+
+            </div>
+
+            <div>
+                <div class="ref">
+                    <div class="ref-person">Mr Matimba</div>
+                    <div class="job-title">School Head</div>
+                    <p>
+                        Tynwald High School <br>
+                        P.O Box 3928 <br>
+                        Westlea <br>
+                        Harare <br>
+                        07742111552
+                    </p>
+                </div>
+
+                <div class="ref">
+                    <div class="ref-person">Mrs Gonde</div>
+                    <div class="job-title">Deputy Head</div>
+                    <p>
+                        Tynwald High School <br>
+                        P.O Box 3928 <br>
+                        Westlea <br>
+                        Harare <br>
+                        0773806566
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="editor"></div>
+
+    <center>
+          <div><input type="button" value="Download CV as PDF" id="cmd" onclick="converHTMLFileToPDF()"></div>
+          <div><button onclick="window.print()"> Click to download</button></div>
+    </center>
+
+</body>
+
+</html>

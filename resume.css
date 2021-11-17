@@ -1,0 +1,211 @@
+﻿body {
+    font-family: 'Times New Roman';
+    line-height: 1.5;
+    background-color: azure;
+    color: black;
+}
+
+#header {
+    background-image: url('header-background.jpg');
+    grid-template-columns: none;
+    text-align:center;
+    border-bottom:none;
+}
+
+img {
+    max-width: 100%;
+    border: 3px solid white;
+    width: 150px;
+    height: 150px;
+    left: 25%;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+   a:hover {
+    text-decoration: underline;
+   }
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background-color: white;
+    background-repeat:no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+    border-bottom:1px solid black;
+}
+
+section:last-child {
+    border-bottom:none;
+}
+
+.sectionTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.split {
+    position: absolute;
+}
+
+.left {
+    width: 80%;
+    left: 0;
+}
+
+.right {
+    width: 20%;
+    right: 0;
+}
+
+/***********************************
+Personal details
+***********************************/
+
+.myName {
+    font-size: 48px;
+    line-height: 1;
+    color:currentColor;
+}
+
+.myTitle {
+    font-size: 24px;
+    font-weight:300;
+    color: currentColor;
+}
+
+/***********************************
+ Education
+***********************************/
+
+.education-info {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid black;
+}
+
+.education-info:last-child {
+    border-bottom: none;
+}
+
+/***********************************
+ Skills
+***********************************/
+
+li {
+    list-style: square;
+}
+
+/***********************************
+ References
+***********************************/
+
+.ref {
+    border-bottom: 1px solid black;
+}
+
+    .ref:last-child {
+        border-bottom: none;
+    }
+
+.ref-person {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/***********************************
+ Languages
+***********************************/
+
+.lang {
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.french {
+    width: 50%;
+}
+
+.english {
+    width: 85%;
+}
+
+.shona {
+    width: 65%;
+}
+
+/***********************************
+ Languages
+***********************************/
+
+.interest {
+    opacity: 0.75;
+}
+
+.hobbie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+}
+
+.fun {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/***********************************
+ Save as PDF button
+***********************************/
+
+button {
+    background-color: black;
+    color: white;
+}
+
+/***********************************
+ Responsiveness
+***********************************/
+
+@media screen and (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    .links{
+        flex-direction: column;
+    }
+
+    .skill {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .interest {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-right: 12px;
+        margin-bottom: 16px;
+    }
+}
